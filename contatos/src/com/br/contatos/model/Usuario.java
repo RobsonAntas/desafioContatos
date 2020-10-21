@@ -12,8 +12,19 @@ public class Usuario {
 	private String email;
 	private List<Telefone> telefones;
 	private Telefone telefone;
+	private boolean verificador;
 
 	
+	public boolean isVerificador() {
+		return verificador;
+	}
+
+
+	public void setVerificador(boolean verificador) {
+		this.verificador = verificador;
+	}
+
+
 	public Usuario() {
 		
 	}

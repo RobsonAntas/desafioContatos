@@ -14,7 +14,7 @@ public Connection getConexao() throws ClassNotFoundException {
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			return DriverManager.getConnection("jdbc:mysql://localhost:3308/contact?useTimezone=true&serverTimezone=America/Sao_Paulo","root","");
+			return DriverManager.getConnection("jdbc:mysql://localhost:3308/agendacontatos?useTimezone=true&serverTimezone=America/Sao_Paulo","root","");
 			
 		}catch(SQLException e) {
 			throw new RuntimeException("Não foi possível conectar-se ao Banco de Dados",e);

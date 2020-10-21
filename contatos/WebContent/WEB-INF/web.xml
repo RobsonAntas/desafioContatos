@@ -5,6 +5,11 @@
     <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
   
+  <mime-mapping>
+  <extension>jsp</extension>
+  <mime-type>text/html</mime-type>
+  </mime-mapping>
+  
   <servlet>
   <servlet-name>triagem</servlet-name>
   <servlet-class>com.br.contatos.entrar.servlet.Triagem</servlet-class>
@@ -13,5 +18,36 @@
   <servlet-mapping>
   <servlet-name>triagem</servlet-name>
   <url-pattern>/checkin</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>agenda</servlet-name>
+  <servlet-class>com.br.contatos.entrar.servlet.Agenda</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>agenda</servlet-name>
+  <url-pattern>/agenda</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>controller</servlet-name>
+  <servlet-class>com.br.contatos.entrar.servlet.Controller</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>controller</servlet-name>
+  <url-pattern>/rota</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>cadastro</servlet-name>
+  <servlet-class>com.br.contatos.entrar.servlet.CadastroServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>cadastro</servlet-name>
+  <url-pattern>/cadastro</url-pattern>
   </servlet-mapping>
 </web-app>

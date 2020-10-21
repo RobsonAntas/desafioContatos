@@ -2,8 +2,6 @@ package com.br.contatos.model;
 
 public class Telefone {
 	
-	
-	
 	public Telefone() {
 		
 	}

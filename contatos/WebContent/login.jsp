@@ -7,17 +7,18 @@
 <meta charset="ISO-8859-1">
 <script>
 $(document).ready(function(){
-	$("#btnlogar").click(function(){
+	$("#login").click(function(){
 		$.post("checkin",{
 			email:$("#user").val(),
 			pass:$("#pass").val()
 	},function(data,status){
-			if(data==1){
-				alert("funciona");
-			}else if(data==0){
-				alert("Usuário ou senha inválida");
-				}
-				    
+			if(data==1)
+			$("#div").load("agenda",function(){
+				$.post("agenda",{email:$("#user").val()})
+			});				
+			else if(data==0)
+				$("#erro").text("Usuário ou senha inválida");
+				$("#erro").css("color","red");								    
 	    });
 		
 		$("#user").val("");
@@ -28,14 +29,21 @@ $(document).ready(function(){
 <title>Contatos</title>
 </head>
 <body>
-<div>
-<input type="email" name="usuario" id="user"/>
-<input type="password" name="senha" id="pass"/>
-<section>
-<button id="btnlogar">logar</button>
-<button>cadastre-se</button>
+<div id="div">
+<h1>Agenda de Contatos</h1>
+<form>
+<table>
+<tr>
+<td>e-mail:<input type="email" name="usuario" id="user"/></td>
+</tr>
+<tr>
+<td>Senha:<input type="password" name="senha" id="pass"/></td>
+</tr>
+</table>
+</form>
+<a id="login" href="#">login</a>
+<a id="btncadastro" href="cadastro">cadastre-se</a>
 <p id="erro"></p>
-</section>
 </div>
 </body>
 </html>
