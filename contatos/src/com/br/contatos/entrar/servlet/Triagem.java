@@ -8,9 +8,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.br.contatos.dao.DaoContatos;
-import com.google.gson.Gson;
-
-
 
 public class Triagem extends HttpServlet{
 	private boolean resultado= false;

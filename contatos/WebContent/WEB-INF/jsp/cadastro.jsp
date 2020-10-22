@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <meta charset="ISO-8859-1">
 <script>
@@ -27,6 +28,7 @@ $(document).ready(function(){
 <title>Cadastro</title>
 </head>
 <body>
+<section class="container">
 <form>
 <table>
 <tr>
@@ -41,5 +43,6 @@ $(document).ready(function(){
 </table>
 <a id="cadastrar" href="#">cadastrar</a><a href="login.jsp">retornar a tela de login</a>
 </form>
+</section>
 </body>
 </html>

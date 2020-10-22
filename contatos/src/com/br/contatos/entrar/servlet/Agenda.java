@@ -1,6 +1,7 @@
 package com.br.contatos.entrar.servlet;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,14 +18,4 @@ public class Agenda extends HttpServlet {
 		
 	}
 	
-	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String email = req.getParameter("email");
-		
-		
-	}
-
-	
-	
-
 }
